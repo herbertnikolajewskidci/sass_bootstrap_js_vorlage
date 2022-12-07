@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap test",
+  "version": "1.0.0",
+  "description": "This is a bootstrap test",
+  "scripts": {
+    "start": "rm -rf dev-serve && parcel src/index.html --dist-dir dev-serve",
+    "dev": "parcel ./src/index.html",
+    "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
+    "publish": "gh-pages -d build"
+  },
+  "author": "herby",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
