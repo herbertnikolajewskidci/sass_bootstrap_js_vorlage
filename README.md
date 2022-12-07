@@ -1,4 +1,4 @@
-# DCI Boilerplate sass + parcel
+# DCI Boilerplate sass + bootrstap JS + parcel
 
 An HTML CSS boilerplate with built-in sass support:
 
@@ -98,9 +98,14 @@ Project
 |   package-lock.json
 └───src
 │   │   index.html
-│   |   sassy-css.scss
 |   └───images
-└───dist
+|   └───styles
+|   |   │   _base.scss
+|   |   │   _variables.scss
+│   |   └───main.scss
+|   └───js
+│       └───main.js
+└───build
 ```
 
 ### `README.md`
@@ -125,12 +130,11 @@ The `main.scss` file will contain any `scss` code you will be writing.
 
 Contains all images of your project
 
-### `dist`
+### `build`
 
-The `dist` folder will be automatically generated whenever your run the start or build script:
+The `build` folder will be automatically generated whenever your run the start or build script:
 
 ```bash
-npm start
 npm run build
 ```
 
